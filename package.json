@@ -1,0 +1,38 @@
+{
+  "name": "lix-index",
+  "version": "1.0.0",
+  "description": "LIX calculator",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "bugs": {
+    "url": "https://github.com/zrrrzzt/lix-index/issues"
+  },
+  "homepage": "https://github.com/zrrrzzt/lix-index#readme",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zrrrzzt/lix-index.git"
+  },
+  "devDependencies": {
+    "ava": "0.25.0",
+    "coveralls": "3.0.0",
+    "nsp": "3.1.0",
+    "nyc": "11.4.1",
+    "standard": "10.0.3"
+  }
+}
